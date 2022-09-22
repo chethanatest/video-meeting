@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Display Webcam Stream</title>
+        <link rel="stylesheet" href="./system.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <script>
+        const roomId = "<%= roomId %>"
+      </script>
+    <body>
+        <div id="container">
+    
+        </div>
+        <div class="bottom-bar">
+            <button><i class="fa fa-microphone" aria-hidden="true"></i></button>
+            <button><i class="fa fa-camera" aria-hidden="true"></i></button>
+            <button><i class="fa fa-handshake" aria-hidden="true"></i></button>
+            <button class="call-end-btn"><i class="fa fa-phone" aria-hidden="true"></i></button>
+        </div>
+        <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+        <script src="./meeting.js"></script>
+    </body>
+
+
+</html>
