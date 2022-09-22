@@ -10,13 +10,14 @@ app.use(express.static('public'))
 const { PeerServer } = require('peer');
 const { v4: uuidV4 } = require('uuid');
 
-const port = 3000;
+const port = process.env.YOUR_PORT || process.env.PORT || 80;
+var host = process.env.HOST || '0.0.0.0';
 
 const peerServer = PeerServer({ port: 3001, path: '/' });
 
 var connectionList = [];
 
-server.listen(port, () => {
+server.listen(host,port, () => {
     console.log("Server Started..")
 })
 
